@@ -16,7 +16,7 @@ public class LeapYear {
 
     get("/detector", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
-      model.put("template", "templates/detector.vtl");
+      model.put("template", "templates/detector.vtl"); 
 
       String year = request.queryParams("year");
       Integer integerYear = Integer.parseInt(year);
